@@ -7,6 +7,8 @@
 //
 
 #include "Others.hpp"
+#include <iostream>
+using namespace std;
 
 /**
  
@@ -88,7 +90,9 @@
      Point &operator-=(const Point &point);
      bool operator==(const Point &point);
      bool operator!=(const Point &point);
+    // 前置递增返回引用
      Point &operator++();
+     // 后置递增返回值
      const Point operator++(int);
  };
 
@@ -237,6 +241,7 @@ public:
 class Car {};
 
 class Point {
+    
 public:
     int m_x;
     int m_y;
@@ -253,6 +258,11 @@ public:
     bool operator!=(const Point &point);
     Point &operator++();
     const Point operator++(int);
+    Point &operator--();
+    const Point operator--(int);
+    Point &operator=(const Point &);
+    // 函数调用符重载 - 仿函数
+    Point &operator()(int, int);
 };
 
 
@@ -304,4 +314,44 @@ bool Point::operator==(const Point &point) {
 
 bool Point::operator!=(const Point &point) {
     return m_x != point.m_x && m_y != point.m_y;
+}
+
+Point & Point::operator--() {
+    this->m_x = this->m_x - 1;
+    this->m_y = this->m_y - 1;
+    return  *this;
+}
+
+const Point Point::operator--(int) {
+    Point temp = *this;
+    m_x = m_x - 1;
+    m_y = m_y - 1;
+    return temp;
+}
+
+Point &Point::operator=(const Point & point) {
+    // 应该先判断是否属性在堆区，如果有先释放干净，再进行深拷贝
+    /**
+     if (m_age != nullptr) {
+        delete m_age;
+        m_age = nullptr;
+     }
+     */
+    cout << m_x << m_y << endl;
+    m_x = point.m_x;
+    m_y = point.m_y;
+    
+    return *this;
+}
+
+Point &Point::operator()(int x, int y) {
+    m_x = x;
+    m_y = y;
+    return *this;
+}
+
+void testPoint() {
+    Point p0(3, 1);
+    p0(40, 1);
+    
 }

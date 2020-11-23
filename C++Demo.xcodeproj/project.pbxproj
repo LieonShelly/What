@@ -62,6 +62,8 @@
 		CD46AF8B2563A923000D0590 /* libopencv_objdetect.4.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CD46AF5E2563A923000D0590 /* libopencv_objdetect.4.5.dylib */; };
 		CD46AF8C2563A923000D0590 /* libopencv_imgcodecs.4.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CD46AF5F2563A923000D0590 /* libopencv_imgcodecs.4.5.dylib */; };
 		CD46AF8D2563A923000D0590 /* libopencv_video.4.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CD46AF602563A923000D0590 /* libopencv_video.4.5.dylib */; };
+		CD46B0F92563C5B9000D0590 /* CVBasicDataType.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD46B0F72563C5B9000D0590 /* CVBasicDataType.cpp */; };
+		CD46B0FF2563DFC4000D0590 /* MemoryLayout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD46B0FD2563DFC4000D0590 /* MemoryLayout.cpp */; };
 		CD76D28F2553CF550085D19E /* StaticMember.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD76D28D2553CF550085D19E /* StaticMember.cpp */; };
 		CD77801A254BBDF70037C7F1 /* InitList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD778018254BBDF70037C7F1 /* InitList.cpp */; };
 		CD778020254BEBA30037C7F1 /* SuperClassInit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD77801E254BEBA30037C7F1 /* SuperClassInit.cpp */; };
@@ -454,6 +456,10 @@
 		CD46B0EE2563AC86000D0590 /* calib3d_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = calib3d_c.h; sourceTree = "<group>"; };
 		CD46B0EF2563AC86000D0590 /* core.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = core.hpp; sourceTree = "<group>"; };
 		CD46B0F22563AE68000D0590 /* box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = box.png; sourceTree = "<group>"; };
+		CD46B0F72563C5B9000D0590 /* CVBasicDataType.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CVBasicDataType.cpp; sourceTree = "<group>"; };
+		CD46B0F82563C5B9000D0590 /* CVBasicDataType.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CVBasicDataType.hpp; sourceTree = "<group>"; };
+		CD46B0FD2563DFC4000D0590 /* MemoryLayout.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MemoryLayout.cpp; sourceTree = "<group>"; };
+		CD46B0FE2563DFC4000D0590 /* MemoryLayout.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MemoryLayout.hpp; sourceTree = "<group>"; };
 		CD76D28D2553CF550085D19E /* StaticMember.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StaticMember.cpp; sourceTree = "<group>"; };
 		CD76D28E2553CF550085D19E /* StaticMember.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = StaticMember.hpp; sourceTree = "<group>"; };
 		CD778018254BBDF70037C7F1 /* InitList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InitList.cpp; sourceTree = "<group>"; };
@@ -635,6 +641,7 @@
 		CD46ADD72563A8EA000D0590 /* CV */ = {
 			isa = PBXGroup;
 			children = (
+				CD46B0F62563C5A0000D0590 /* 基础数据类型 */,
 				CD46ADD82563A900000D0590 /* Libs */,
 			);
 			path = CV;
@@ -1368,6 +1375,24 @@
 			path = calib3d;
 			sourceTree = "<group>";
 		};
+		CD46B0F62563C5A0000D0590 /* 基础数据类型 */ = {
+			isa = PBXGroup;
+			children = (
+				CD46B0F72563C5B9000D0590 /* CVBasicDataType.cpp */,
+				CD46B0F82563C5B9000D0590 /* CVBasicDataType.hpp */,
+			);
+			path = "基础数据类型";
+			sourceTree = "<group>";
+		};
+		CD46B0FC2563DFA6000D0590 /* 内存布局 */ = {
+			isa = PBXGroup;
+			children = (
+				CD46B0FD2563DFC4000D0590 /* MemoryLayout.cpp */,
+				CD46B0FE2563DFC4000D0590 /* MemoryLayout.hpp */,
+			);
+			path = "内存布局";
+			sourceTree = "<group>";
+		};
 		CD76D28B2553CEC40085D19E /* 静态成员 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1477,6 +1502,7 @@
 		CD874F4D2485F31B00FC72EC /* C++Demo */ = {
 			isa = PBXGroup;
 			children = (
+				CD46B0FC2563DFA6000D0590 /* 内存布局 */,
 				CD46B0F22563AE68000D0590 /* box.png */,
 				CD46ADD72563A8EA000D0590 /* CV */,
 				CDCBEBE5256251F800C51B1E /* Effective C++ */,
@@ -1572,6 +1598,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD46B0FF2563DFC4000D0590 /* MemoryLayout.cpp in Sources */,
+				CD46B0F92563C5B9000D0590 /* CVBasicDataType.cpp in Sources */,
 				CD874F5F2487F73900FC72EC /* main.cpp in Sources */,
 				CD458C932559366E003AD5A8 /* Friend.cpp in Sources */,
 				CD7A0FE125383F1D0095FBA6 /* NameSpace.cpp in Sources */,

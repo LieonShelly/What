@@ -14,10 +14,13 @@
  - 如果将函数A（非成员函数）声明为类C的友元函数，那么函数A就能直接访问类C对象的所有成员
  - 如果将类A声明为类C的友元类，那么类A的所有成员函数就能直接访问类C对象的所有成员
  - 友元破坏了面向对象的封装性，但在某些频繁访问成员变量的地方可以提高性能
+ - 朋友元的就是让一个函数或者类，访问另一个类中的私有成员
  
  ```C++
  class Point {
+     // add 是point的友元函数，可以Point类中的所有成员）
      friend Point add(const Point &, const Point &);
+     // Math是Point的友元类，Math中可以访问Point类中的所有成员
      friend class Math;
  private:
      int m_x;

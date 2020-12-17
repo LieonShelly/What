@@ -10,5 +10,5 @@
 #define Others_hpp
 
 #include <stdio.h>
-void testPoint();
+
 #endif /* Others_hpp */

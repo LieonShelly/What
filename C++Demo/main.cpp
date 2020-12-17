@@ -10,8 +10,13 @@
 #include "SmartPointer.hpp"
 #include <math.h>
 #include "Others.hpp"
+#include "CVBasicDataType.hpp"
 
 int main( int argc, char** argv ) {
-    testPoint();
+//    testFilterDisplace("/Users/lieon/Desktop/置换/img.jpg",
+//                       "/Users/lieon/Desktop/置换/output.png",
+//                       15,
+//                       "/Users/lieon/Desktop/置换/0.pts");
+    testReadImg();
     return 0;
 }

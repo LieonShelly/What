@@ -350,8 +350,3 @@ Point &Point::operator()(int x, int y) {
     return *this;
 }
 
-void testPoint() {
-    Point p0(3, 1);
-    p0(40, 1);
-    
-}

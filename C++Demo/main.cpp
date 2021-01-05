@@ -7,34 +7,54 @@
 //
 
 #include <iostream>
-#include "ArrayList.hpp"
+#include "LinkedList.hpp"
 #include <vector>
 
 using namespace std;
 
 class TestPerson {
+public:
     int m_age = 0;
 public:
     TestPerson(int age): m_age(age) {}
     
-    ~TestPerson() {
+    virtual ~TestPerson() {
         std::cout << "~TestPerson" << std::endl;
     }
-    
-    bool operator==( TestPerson * obj) {
-        return m_age == obj->m_age;
+    void virtual eatTest() = 0;
+};
+
+class TestStudent: public TestPerson {
+public:
+    TestStudent(): TestPerson(10) {
+        
+    }
+    void eatTest() override {
+        cout << "TestStudent::eat" << endl;
     }
 };
+
+
+class TestGraduate: public TestStudent {
+public:
+    TestGraduate()  {
+        
+    }
+    
+    void eatTest() override {
+        cout << "TestGraduate::eat" << endl;
+    }
+};
+
 int main( int argc, char** argv ) {
-    ArrayList<TestPerson*> *list = new ArrayList<TestPerson*>();
-    TestPerson *person = new TestPerson(10);
-    TestPerson *person1 = new TestPerson(11);
-    TestPerson *person2 = new TestPerson(13);
-    list->add(person);
-    list->add(person1);
-    list->add(person2);
-    int idx = list->indexOf(person2);
-    std::cout << idx << std::endl;
-    list->clear();
+    LinkedList<TestGraduate> *list = new LinkedList<TestGraduate>();
+//    for (int index = 0 ; index < 11; index++) {
+//        list->add(TestGraduate());
+//    }
+    list->add(TestGraduate());
+//    int deleteIndex = 2;
+    cout << list->get(0).m_age << endl;
+//    list->removeAt(deleteIndex);
+//    cout << list->get(deleteIndex) << endl;
     return 0;
 }

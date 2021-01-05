@@ -14,16 +14,18 @@
 template<class Element>
 class List {
 public:
-    List();
-    virtual ~List();
-    virtual void clear();
-    virtual int getSize();
-    virtual bool contains(Element element);
-    virtual void add(Element element);
-    virtual void insert(int index, Element element);
-    virtual Element get(int index);
-    virtual int indexOf(Element element);
-    virtual int removeAt(int index);
+    List() {};
+    virtual ~List() {};
+    virtual void clear() = 0;
+    virtual int getSize() = 0;
+    virtual bool contains(const Element &element) = 0;
+    virtual void add(const Element &element) = 0;
+    virtual void insert(int index, const Element &element) = 0;
+    virtual Element& get(int index) = 0;
+    virtual int indexOf(const Element &element) = 0;
+    virtual Element& removeAt(int index) = 0;
+    virtual bool isEmpty() = 0;
+    virtual Element& set(int index, const Element &element) = 0;
 };
 
 #endif /* List_hpp */

@@ -10,6 +10,7 @@
 #define ArrayList_hpp
 
 #include <iostream>
+using namespace std;
 
 template<class Item>
 class ArrayList {
@@ -97,5 +98,6 @@ public:
         return old;
     }
 };
+
 
 #endif /* ArrayList_hpp */

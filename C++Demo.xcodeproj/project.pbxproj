@@ -83,6 +83,7 @@
 		CDEE539725A314A100A57A32 /* Basic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDEE539525A314A100A57A32 /* Basic.cpp */; };
 		CDEE539D25A362D500A57A32 /* LinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDEE539B25A362D500A57A32 /* LinkedList.cpp */; };
 		CDEE53A225A365B000A57A32 /* List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDEE53A025A365B000A57A32 /* List.cpp */; };
+		CDEE53A625A40A2B00A57A32 /* AbstractList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDEE53A425A40A2B00A57A32 /* AbstractList.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -504,6 +505,8 @@
 		CDEE539C25A362D500A57A32 /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
 		CDEE53A025A365B000A57A32 /* List.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = List.cpp; sourceTree = "<group>"; };
 		CDEE53A125A365B000A57A32 /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
+		CDEE53A425A40A2B00A57A32 /* AbstractList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AbstractList.cpp; sourceTree = "<group>"; };
+		CDEE53A525A40A2B00A57A32 /* AbstractList.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = AbstractList.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1618,6 +1621,8 @@
 				CDEE539C25A362D500A57A32 /* LinkedList.hpp */,
 				CDEE53A025A365B000A57A32 /* List.cpp */,
 				CDEE53A125A365B000A57A32 /* List.hpp */,
+				CDEE53A425A40A2B00A57A32 /* AbstractList.cpp */,
+				CDEE53A525A40A2B00A57A32 /* AbstractList.hpp */,
 			);
 			path = "链表";
 			sourceTree = "<group>";
@@ -1696,6 +1701,7 @@
 				CDCBEBE82562523200C51B1E /* Resource.cpp in Sources */,
 				CD3219122530604300546C50 /* reference.hpp in Sources */,
 				CD778026254BEE570037C7F1 /* SuperPoiner.cpp in Sources */,
+				CDEE53A625A40A2B00A57A32 /* AbstractList.cpp in Sources */,
 				CD29F7FD2556F7300023EFE7 /* ConstMember.cpp in Sources */,
 				CD458C9F255A4348003AD5A8 /* Template.cpp in Sources */,
 				CD458CA5255A817E003AD5A8 /* Lambda.cpp in Sources */,

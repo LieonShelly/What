@@ -354,11 +354,12 @@ void testSpareseMat() {
 void sum_rgb(const cv::Mat& src, cv::Mat& dst);
 void adaptiveThreshold(const string & imgPth);
 void testTransform(const cv::Mat & src);
+void testPerspectiveTransform(const cv::Mat & src);
 
 void testdfdff() {
 //    adaptiveThreshold("/Users/lieon/Desktop/置换/img.jpg");
     cv::Mat src1 = cv::imread("/Users/lieon/Desktop/置换/img.jpg");
-    testTransform(src1);
+    testPerspectiveTransform(src1);
 }
 
 void testFileStore() {
@@ -462,5 +463,56 @@ void testTransform(const cv::Mat & src) {
 
 
 void testAffineTransform(const cv::Mat & src) {
-    cv::Point3f srcTri[] = {};
+    cv::Point2f srcTri[] = {
+        cv::Point2f(0, 0),
+        cv::Point2f(src.cols - 1, 0),
+        cv::Point2f(0, src.rows - 1)
+    };
+    cv::Point2f dstTri[] = {
+        cv::Point2f(src.cols * 0.f, src.rows * 0.33f),
+        cv::Point2f(src.cols * 0.8f, src.rows * 0.25f),
+        cv::Point2f(src.cols * 0.15f, src.rows * 0.7f)
+    };
+    cv::Mat warp_mat = cv::getAffineTransform(srcTri, dstTri);
+    cv::Mat dst, dst2;
+    cv::warpAffine(src,
+                   dst,
+                   warp_mat,
+                   src.size(),
+                   cv::INTER_LINEAR,
+                   cv::BORDER_CONSTANT,
+                   cv::Scalar()
+                   );
+    for (int i = 0; i < 3; ++i) {
+        cv::circle(dst,
+                   dstTri[i],
+                   5,
+                   cv::Scalar(255, 0, 255));
+    }
+    cv::imshow("Test", dst);
+    cv::waitKey();
 }
+
+void testPerspectiveTransform(const cv::Mat & src) {
+    cv::Point2f scrcQuad[] = {
+        cv::Point2f(0, 0),
+        cv::Point2f(src.cols - 1, 0),
+        cv::Point2f(src.cols - 1, src.rows - 1),
+        cv::Point2f(0, src.rows - 1),
+    };
+    cv::Point2f dstQuad[] = {
+        cv::Point2f(src.cols * 0.05f, src.rows * 0.33f),
+        cv::Point2f(src.cols * 0.9f, src.rows * 0.25f),
+        cv::Point2f(src.cols * 0.8f, src.rows * 0.9f),
+        cv::Point2f(src.cols * 0.2f, src.rows * 0.7f),
+    };
+    cv::Mat warp_mat = cv::getPerspectiveTransform(scrcQuad, dstQuad);
+    cv::Mat dst;
+    cv::warpPerspective(src, dst, warp_mat, src.size());
+    for (int i = 0; i < 4; ++i) {
+        cv::circle(dst, dstQuad[i], 5, cv::Scalar(255, 0, 255));
+    }
+    cv::imshow("pe", dst);
+    cv::waitKey();
+}
+

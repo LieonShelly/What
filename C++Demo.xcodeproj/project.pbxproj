@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		CD0FD1B1255B85E5007A75C5 /* SmartPointer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD0FD1AF255B85E5007A75C5 /* SmartPointer.cpp */; };
 		CD16E726254FB51D004AE2D5 /* MultiInheritence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD16E724254FB51D004AE2D5 /* MultiInheritence.cpp */; };
+		CD1C1ED225A0C72A000B14A6 /* Fuzadu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD1C1ED025A0C72A000B14A6 /* Fuzadu.cpp */; };
+		CD1C1ED825A21D44000B14A6 /* ArrayList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD1C1ED625A21D44000B14A6 /* ArrayList.cpp */; };
 		CD29F7FD2556F7300023EFE7 /* ConstMember.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD29F7FB2556F7300023EFE7 /* ConstMember.cpp */; };
 		CD29F8032556FED40023EFE7 /* CopyConstruct.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD29F8012556FED40023EFE7 /* CopyConstruct.cpp */; };
 		CD29F808255703700023EFE7 /* Copy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD29F806255703700023EFE7 /* Copy.cpp */; };
@@ -78,6 +80,9 @@
 		CD874F5F2487F73900FC72EC /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD874F4E2485F31B00FC72EC /* main.cpp */; };
 		CD939693256BBD8A0009D79A /* STL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD939691256BBD8A0009D79A /* STL.cpp */; };
 		CDCBEBE82562523200C51B1E /* Resource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDCBEBE62562523200C51B1E /* Resource.cpp */; };
+		CDEE539725A314A100A57A32 /* Basic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDEE539525A314A100A57A32 /* Basic.cpp */; };
+		CDEE539D25A362D500A57A32 /* LinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDEE539B25A362D500A57A32 /* LinkedList.cpp */; };
+		CDEE53A225A365B000A57A32 /* List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDEE53A025A365B000A57A32 /* List.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -97,6 +102,10 @@
 		CD0FD1B0255B85E5007A75C5 /* SmartPointer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SmartPointer.hpp; sourceTree = "<group>"; };
 		CD16E724254FB51D004AE2D5 /* MultiInheritence.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MultiInheritence.cpp; sourceTree = "<group>"; };
 		CD16E725254FB51D004AE2D5 /* MultiInheritence.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MultiInheritence.hpp; sourceTree = "<group>"; };
+		CD1C1ED025A0C72A000B14A6 /* Fuzadu.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Fuzadu.cpp; sourceTree = "<group>"; };
+		CD1C1ED125A0C72A000B14A6 /* Fuzadu.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Fuzadu.hpp; sourceTree = "<group>"; };
+		CD1C1ED625A21D44000B14A6 /* ArrayList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ArrayList.cpp; sourceTree = "<group>"; };
+		CD1C1ED725A21D44000B14A6 /* ArrayList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ArrayList.hpp; sourceTree = "<group>"; };
 		CD29F7FB2556F7300023EFE7 /* ConstMember.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ConstMember.cpp; sourceTree = "<group>"; };
 		CD29F7FC2556F7300023EFE7 /* ConstMember.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ConstMember.hpp; sourceTree = "<group>"; };
 		CD29F8012556FED40023EFE7 /* CopyConstruct.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CopyConstruct.cpp; sourceTree = "<group>"; };
@@ -489,6 +498,12 @@
 		CD939692256BBD8A0009D79A /* STL.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = STL.hpp; sourceTree = "<group>"; };
 		CDCBEBE62562523200C51B1E /* Resource.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Resource.cpp; sourceTree = "<group>"; };
 		CDCBEBE72562523200C51B1E /* Resource.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Resource.hpp; sourceTree = "<group>"; };
+		CDEE539525A314A100A57A32 /* Basic.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Basic.cpp; sourceTree = "<group>"; };
+		CDEE539625A314A100A57A32 /* Basic.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Basic.hpp; sourceTree = "<group>"; };
+		CDEE539B25A362D500A57A32 /* LinkedList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedList.cpp; sourceTree = "<group>"; };
+		CDEE539C25A362D500A57A32 /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
+		CDEE53A025A365B000A57A32 /* List.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = List.cpp; sourceTree = "<group>"; };
+		CDEE53A125A365B000A57A32 /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -570,6 +585,34 @@
 				CD16E725254FB51D004AE2D5 /* MultiInheritence.hpp */,
 			);
 			path = "多继承";
+			sourceTree = "<group>";
+		};
+		CD1C1ECE25A0C70E000B14A6 /* 算法 */ = {
+			isa = PBXGroup;
+			children = (
+				CDEE539A25A362BB00A57A32 /* 链表 */,
+				CD1C1ED525A21D1C000B14A6 /* 动态数组 */,
+				CD1C1ECF25A0C715000B14A6 /* 复杂度 */,
+			);
+			path = "算法";
+			sourceTree = "<group>";
+		};
+		CD1C1ECF25A0C715000B14A6 /* 复杂度 */ = {
+			isa = PBXGroup;
+			children = (
+				CD1C1ED025A0C72A000B14A6 /* Fuzadu.cpp */,
+				CD1C1ED125A0C72A000B14A6 /* Fuzadu.hpp */,
+			);
+			path = "复杂度";
+			sourceTree = "<group>";
+		};
+		CD1C1ED525A21D1C000B14A6 /* 动态数组 */ = {
+			isa = PBXGroup;
+			children = (
+				CD1C1ED625A21D44000B14A6 /* ArrayList.cpp */,
+				CD1C1ED725A21D44000B14A6 /* ArrayList.hpp */,
+			);
+			path = "动态数组";
 			sourceTree = "<group>";
 		};
 		CD29F7FA2556F7170023EFE7 /* Const成员 */ = {
@@ -1507,6 +1550,8 @@
 		CD874F4D2485F31B00FC72EC /* C++Demo */ = {
 			isa = PBXGroup;
 			children = (
+				CDEE539425A3148900A57A32 /* OpenGL学习 */,
+				CD1C1ECE25A0C70E000B14A6 /* 算法 */,
 				CD495BD92584E6F6002DBFEA /* Assemble.asm */,
 				CD939690256BBD210009D79A /* STL */,
 				CD46B0FC2563DFA6000D0590 /* 内存布局 */,
@@ -1555,6 +1600,26 @@
 				CDCBEBE72562523200C51B1E /* Resource.hpp */,
 			);
 			path = "Effective C++";
+			sourceTree = "<group>";
+		};
+		CDEE539425A3148900A57A32 /* OpenGL学习 */ = {
+			isa = PBXGroup;
+			children = (
+				CDEE539525A314A100A57A32 /* Basic.cpp */,
+				CDEE539625A314A100A57A32 /* Basic.hpp */,
+			);
+			path = "OpenGL学习";
+			sourceTree = "<group>";
+		};
+		CDEE539A25A362BB00A57A32 /* 链表 */ = {
+			isa = PBXGroup;
+			children = (
+				CDEE539B25A362D500A57A32 /* LinkedList.cpp */,
+				CDEE539C25A362D500A57A32 /* LinkedList.hpp */,
+				CDEE53A025A365B000A57A32 /* List.cpp */,
+				CDEE53A125A365B000A57A32 /* List.hpp */,
+			);
+			path = "链表";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1615,10 +1680,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD46B0FF2563DFC4000D0590 /* MemoryLayout.cpp in Sources */,
+				CD1C1ED225A0C72A000B14A6 /* Fuzadu.cpp in Sources */,
 				CD46B0F92563C5B9000D0590 /* CVBasicDataType.cpp in Sources */,
 				CD874F5F2487F73900FC72EC /* main.cpp in Sources */,
 				CD458C932559366E003AD5A8 /* Friend.cpp in Sources */,
 				CD7A0FE125383F1D0095FBA6 /* NameSpace.cpp in Sources */,
+				CDEE53A225A365B000A57A32 /* List.cpp in Sources */,
 				CD16E726254FB51D004AE2D5 /* MultiInheritence.cpp in Sources */,
 				CD77802C254BF1610037C7F1 /* Polymorphism.cpp in Sources */,
 				CD495BDA2584E6F6002DBFEA /* Assemble.asm in Sources */,
@@ -1635,9 +1702,12 @@
 				CD7A0FD32538346C0095FBA6 /* PropertyInit.cpp in Sources */,
 				CD7A0FE7253840AF0095FBA6 /* Inherience.cpp in Sources */,
 				CD939693256BBD8A0009D79A /* STL.cpp in Sources */,
+				CDEE539D25A362D500A57A32 /* LinkedList.cpp in Sources */,
 				CD77801A254BBDF70037C7F1 /* InitList.cpp in Sources */,
 				CD458C9925594237003AD5A8 /* Others.cpp in Sources */,
 				CD7C16A625369895006893D3 /* StackSapce.cpp in Sources */,
+				CD1C1ED825A21D44000B14A6 /* ArrayList.cpp in Sources */,
+				CDEE539725A314A100A57A32 /* Basic.cpp in Sources */,
 				CD7A0FDB25383CF40095FBA6 /* ObjectMemManage.cpp in Sources */,
 				CD76D28F2553CF550085D19E /* StaticMember.cpp in Sources */,
 			);

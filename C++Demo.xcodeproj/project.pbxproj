@@ -11,6 +11,7 @@
 		CD16E726254FB51D004AE2D5 /* MultiInheritence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD16E724254FB51D004AE2D5 /* MultiInheritence.cpp */; };
 		CD1C1ED225A0C72A000B14A6 /* Fuzadu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD1C1ED025A0C72A000B14A6 /* Fuzadu.cpp */; };
 		CD1C1ED825A21D44000B14A6 /* ArrayList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD1C1ED625A21D44000B14A6 /* ArrayList.cpp */; };
+		CD29AA2825A5A0A800B41B64 /* LinkedListPractise.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD29AA2625A5A0A800B41B64 /* LinkedListPractise.cpp */; };
 		CD29F7FD2556F7300023EFE7 /* ConstMember.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD29F7FB2556F7300023EFE7 /* ConstMember.cpp */; };
 		CD29F8032556FED40023EFE7 /* CopyConstruct.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD29F8012556FED40023EFE7 /* CopyConstruct.cpp */; };
 		CD29F808255703700023EFE7 /* Copy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD29F806255703700023EFE7 /* Copy.cpp */; };
@@ -107,6 +108,8 @@
 		CD1C1ED125A0C72A000B14A6 /* Fuzadu.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Fuzadu.hpp; sourceTree = "<group>"; };
 		CD1C1ED625A21D44000B14A6 /* ArrayList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ArrayList.cpp; sourceTree = "<group>"; };
 		CD1C1ED725A21D44000B14A6 /* ArrayList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ArrayList.hpp; sourceTree = "<group>"; };
+		CD29AA2625A5A0A800B41B64 /* LinkedListPractise.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedListPractise.cpp; sourceTree = "<group>"; };
+		CD29AA2725A5A0A800B41B64 /* LinkedListPractise.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedListPractise.hpp; sourceTree = "<group>"; };
 		CD29F7FB2556F7300023EFE7 /* ConstMember.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ConstMember.cpp; sourceTree = "<group>"; };
 		CD29F7FC2556F7300023EFE7 /* ConstMember.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ConstMember.hpp; sourceTree = "<group>"; };
 		CD29F8012556FED40023EFE7 /* CopyConstruct.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CopyConstruct.cpp; sourceTree = "<group>"; };
@@ -616,6 +619,15 @@
 				CD1C1ED725A21D44000B14A6 /* ArrayList.hpp */,
 			);
 			path = "动态数组";
+			sourceTree = "<group>";
+		};
+		CD29AA2525A5A07B00B41B64 /* 练习 */ = {
+			isa = PBXGroup;
+			children = (
+				CD29AA2625A5A0A800B41B64 /* LinkedListPractise.cpp */,
+				CD29AA2725A5A0A800B41B64 /* LinkedListPractise.hpp */,
+			);
+			path = "练习";
 			sourceTree = "<group>";
 		};
 		CD29F7FA2556F7170023EFE7 /* Const成员 */ = {
@@ -1617,6 +1629,7 @@
 		CDEE539A25A362BB00A57A32 /* 链表 */ = {
 			isa = PBXGroup;
 			children = (
+				CD29AA2525A5A07B00B41B64 /* 练习 */,
 				CDEE539B25A362D500A57A32 /* LinkedList.cpp */,
 				CDEE539C25A362D500A57A32 /* LinkedList.hpp */,
 				CDEE53A025A365B000A57A32 /* List.cpp */,
@@ -1689,6 +1702,7 @@
 				CD46B0F92563C5B9000D0590 /* CVBasicDataType.cpp in Sources */,
 				CD874F5F2487F73900FC72EC /* main.cpp in Sources */,
 				CD458C932559366E003AD5A8 /* Friend.cpp in Sources */,
+				CD29AA2825A5A0A800B41B64 /* LinkedListPractise.cpp in Sources */,
 				CD7A0FE125383F1D0095FBA6 /* NameSpace.cpp in Sources */,
 				CDEE53A225A365B000A57A32 /* List.cpp in Sources */,
 				CD16E726254FB51D004AE2D5 /* MultiInheritence.cpp in Sources */,

@@ -49,10 +49,15 @@ public:
 
 int main( int argc, char** argv ) {
     LinkedList<int> *list = new LinkedList<int>();
-    for (int index = 0 ; index < 11; index++) {
+    for (int index = 1 ; index < 11; index++) {
         list->add(index);
     }
-    int deleteIndex = list->indexOf(3);
-    cout << deleteIndex << endl;
+    Node<int> *node = list->reverseList();
+    bool has = list->hasCycle();
+    cout << has << endl;
+    while (node != nullptr) {
+        cout << node->element << endl;
+        node = node->next;
+    }
     return 0;
 }

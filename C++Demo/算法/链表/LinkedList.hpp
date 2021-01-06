@@ -25,19 +25,22 @@
 #include <stdio.h>
 #include <iostream>
 using namespace std;
+
+template<typename Element>
+class Node {
+public:
+    Element element;
+    Node<Element> *next { nullptr };
+    
+    Node(const Element &element, Node<Element> * const next) {
+        this->element = element;
+        this->next = next;
+    }
+};
+
 template<typename E>
 class LinkedList: public AbstractList<E> {
-    template<typename Element>
-    class Node {
-    public:
-        Element element ;
-        Node<Element> *next { nullptr };
-        
-        Node(const Element &element, Node<Element> * const next) {
-            this->element = element;
-            this->next = next;
-        }
-    };
+ 
     
 private:
     Node<E> *first { nullptr };
@@ -120,6 +123,34 @@ public:
     
     bool isEmpty() override {
         return this->m_size > 0;
+    }
+    
+    Node<E>* reverseList() {
+        Node<E> * cur = nullptr;
+        Node<E> *pre = first;
+        while (pre != nullptr) {
+            Node<E> *temp = pre->next;
+            pre->next = cur;
+            cur = pre;
+            pre = temp;
+        }
+        return cur;
+    }
+    
+    bool hasCycle() {
+        if (first == nullptr || first->next == nullptr) {
+            return false;
+        }
+        Node<E> *slow = first;
+        Node<E> *fast = first->next;
+        while (fast != nullptr && fast->next != nullptr) {
+            if (fast == slow) {
+                return true;
+            }
+            slow = slow->next;
+            fast = fast->next->next;
+        }
+        return false;
     }
 };
 

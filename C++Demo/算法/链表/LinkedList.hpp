@@ -95,7 +95,14 @@ public:
     }
     
     int indexOf(const E &element) override {
-        return 0;
+        Node<E> * node = first;
+        for (int i = 0; i < this->m_size; i++) {
+            if (element == node->element) {
+                return i;
+            }
+            node = node->next;
+        }
+        return -1;
     }
     
     E& removeAt(int index) override {

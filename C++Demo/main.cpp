@@ -44,17 +44,15 @@ public:
     void eatTest() override {
         cout << "TestGraduate::eat" << endl;
     }
+    
 };
 
 int main( int argc, char** argv ) {
-    LinkedList<TestGraduate> *list = new LinkedList<TestGraduate>();
-//    for (int index = 0 ; index < 11; index++) {
-//        list->add(TestGraduate());
-//    }
-    list->add(TestGraduate());
-//    int deleteIndex = 2;
-    cout << list->get(0).m_age << endl;
-//    list->removeAt(deleteIndex);
-//    cout << list->get(deleteIndex) << endl;
+    LinkedList<int> *list = new LinkedList<int>();
+    for (int index = 0 ; index < 11; index++) {
+        list->add(index);
+    }
+    int deleteIndex = list->indexOf(3);
+    cout << deleteIndex << endl;
     return 0;
 }

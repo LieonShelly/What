@@ -23,13 +23,13 @@ public:
     virtual void add(const Element &element) override {
         this->insert(m_size, element);
     }
-    
-protected:
     struct Enum {
         enum {
             ELEMENT_NOT_FOUND = -1
         };
     };
+protected:
+  
     int m_size = 0;
     
     virtual int getSize() override {

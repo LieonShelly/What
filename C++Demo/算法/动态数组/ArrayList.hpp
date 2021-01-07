@@ -17,8 +17,10 @@ class ArrayList {
     
 private:
     int m_size = 0;
+    int m_capacity = 0;
     Item *m_elements { nullptr };
     
+    // 扩容
     void ensureCapacity(int capacity) {
         int oldCap = m_size;
         if (oldCap >= capacity) {
@@ -29,9 +31,29 @@ private:
         for (int index = 0; index < m_size; index++) {
             newElements[index] = m_elements[index];
         }
+        m_capacity = newCap;
         m_elements = newElements;
+        cout << "容量为：" << oldCap << "扩容为: " << m_capacity << endl;
     }
     
+    // 缩容
+    void trim() {
+        if (m_size == 0) {
+            return;
+        }
+        int oldCap = m_capacity;
+        int newCap = oldCap >> 1;
+        if (m_size >= newCap || oldCap <= 10) {
+            return;
+        }
+        Item *newElements = new Item[newCap];
+        for (int i = 0; i < m_size; i++) {
+            newElements[i] = m_elements[i];
+        }
+        m_capacity = newCap;
+        m_elements = newElements;
+        cout << "容量为：" << oldCap << "缩容为: " << m_capacity << endl;
+    }
 public:
     ArrayList(int capacity = 100) {
         ensureCapacity(capacity);
@@ -63,6 +85,7 @@ public:
         if (index < 0 || index > m_size) {
             throw "Out of bounds, index:" + std::string("%ld", index);
         }
+        ensureCapacity(m_size + 1);
         for (int i = m_size - 1; i > index; i--) {
             m_elements[i + 1] = m_elements[i];
         }
@@ -94,7 +117,8 @@ public:
         for (int i = index + 1; i < m_size; i++) {
             m_elements[i - 1] = m_elements[i];
         }
-        m_elements[--m_size] = nullptr;
+        m_elements[--m_size] = NULL;
+        trim();
         return old;
     }
 };

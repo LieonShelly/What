@@ -9,7 +9,7 @@
 #include <iostream>
 #include "LinkedList.hpp"
 #include <vector>
-
+#include "ArrayList.hpp"
 using namespace std;
 
 class TestPerson {
@@ -48,16 +48,23 @@ public:
 };
 
 int main( int argc, char** argv ) {
-    LinkedList<int> *list = new LinkedList<int>();
-    for (int index = 1 ; index < 11; index++) {
-        list->add(index);
+//    LinkedList<int> *list = new LinkedList<int>();
+//    for (int index = 1 ; index < 11; index++) {
+//        list->add(index);
+//    }
+//    Node<int> *node = list->reverseList();
+//    bool has = list->hasCycle();
+//    cout << has << endl;
+//    while (node != nullptr) {
+//        cout << node->element << endl;
+//        node = node->next;
+//    }
+    ArrayList<int> *list = new ArrayList<int>();
+    for (int i = 0; i < 50; i++) {
+        list->add(i);
     }
-    Node<int> *node = list->reverseList();
-    bool has = list->hasCycle();
-    cout << has << endl;
-    while (node != nullptr) {
-        cout << node->element << endl;
-        node = node->next;
+    for (int i = 0; i < 50; i++) {
+        list->removeAt(0);
     }
     return 0;
 }

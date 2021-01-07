@@ -83,6 +83,7 @@ public:
     }
     
     void insert(int index, const E &element) override {
+        this->rangeCheckForAdd(index);
         if (index == 0) {
             first = new Node<E>(element, first);
         } else {
@@ -109,6 +110,7 @@ public:
     }
     
     E& removeAt(int index) override {
+        this->rangeCheck(index);
         Node<E> *node = first;
         if (index == 0) {
             first = first->next;

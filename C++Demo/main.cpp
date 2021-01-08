@@ -8,6 +8,7 @@
 
 #include <iostream>
 #include "LinkedList.hpp"
+#include "DoubleLinkedList.hpp"
 #include <vector>
 #include "ArrayList.hpp"
 using namespace std;
@@ -48,23 +49,22 @@ public:
 };
 
 int main( int argc, char** argv ) {
-//    LinkedList<int> *list = new LinkedList<int>();
-//    for (int index = 1 ; index < 11; index++) {
-//        list->add(index);
-//    }
-//    Node<int> *node = list->reverseList();
-//    bool has = list->hasCycle();
-//    cout << has << endl;
-//    while (node != nullptr) {
-//        cout << node->element << endl;
-//        node = node->next;
-//    }
-    ArrayList<int> *list = new ArrayList<int>();
-    for (int i = 0; i < 50; i++) {
-        list->add(i);
-    }
-    for (int i = 0; i < 50; i++) {
-        list->removeAt(0);
+    DoubleLinkedList<int> *list = new DoubleLinkedList<int>();
+    list->add(0);
+    list->add(1);
+    list->add(2);
+    list->add(3);
+    list->add(4);
+    list->add(5);
+    list->add(6);
+    list->add(7);
+    
+    list->removeAt(0);
+    
+    DoubleNode<int> *node = list->first;
+    while (node != nullptr) {
+        cout << node->element << endl;
+        node = node->next;
     }
     return 0;
 }

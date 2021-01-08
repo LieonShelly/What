@@ -36,6 +36,9 @@ public:
         this->element = element;
         this->next = next;
     }
+    
+    ~Node() {
+    }
 };
 
 template<typename E>
@@ -60,12 +63,17 @@ public:
     }
     
     ~LinkedList() {
-        
+        clear();
     }
     
     void clear() override {
         this->m_size = 0;
         if (first != nullptr) {
+            Node<E> *node = first->next;
+            while (node != nullptr) {
+                node = node->next;
+                delete node->next;
+            }
             delete first;
             first = nullptr;
         }

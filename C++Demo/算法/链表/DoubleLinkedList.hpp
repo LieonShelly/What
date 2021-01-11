@@ -31,10 +31,7 @@ public:
 
 template <typename E>
 class DoubleLinkedList: public AbstractList<E> {
-
 private:
-
-    
     // 获取index位置对应的节点对象
     DoubleNode<E> & nodeAt(int index) {
         this->rangeCheck(index);
@@ -52,7 +49,7 @@ private:
             return *node;
         }
     }
-    
+
 public:
     DoubleNode<E> *first { nullptr };
     DoubleNode<E> *last { nullptr };

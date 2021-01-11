@@ -48,8 +48,10 @@ public:
     
 };
 
+#include "SingleCycleLinkedList.hpp"
+
 int main( int argc, char** argv ) {
-    DoubleLinkedList<int> *list = new DoubleLinkedList<int>();
+    SingleCycleLinkedList<int> *list = new SingleCycleLinkedList<int>();
     list->add(0);
     list->add(1);
     list->add(2);
@@ -58,13 +60,14 @@ int main( int argc, char** argv ) {
     list->add(5);
     list->add(6);
     list->add(7);
+
+//    list->insert(0, 111);
+//    list->insert(4, 444);
+//    list->add(8);
     
-    list->removeAt(0);
-    
-    DoubleNode<int> *node = list->first;
-    while (node != nullptr) {
-        cout << node->element << endl;
-        node = node->next;
-    }
+//    list->removeAt(6);
+//    list->removeAt(3);
+    list->printAll();
+    cout << "------------" << endl;
     return 0;
 }

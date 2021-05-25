@@ -16,7 +16,7 @@ template<class Item>
 class ArrayList {
     
 private:
-    int m_size = 0;
+  
     int m_capacity = 0;
     Item *m_elements { nullptr };
     
@@ -55,6 +55,8 @@ private:
         cout << "容量为：" << oldCap << "缩容为: " << m_capacity << endl;
     }
 public:
+    int m_size = 0;
+    
     ArrayList(int capacity = 100) {
         ensureCapacity(capacity);
     }
@@ -120,6 +122,10 @@ public:
         m_elements[--m_size] = NULL;
         trim();
         return old;
+    }
+    
+    bool isEmpty() {
+        return m_size == 0;
     }
 };
 

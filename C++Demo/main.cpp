@@ -10,7 +10,11 @@
 #include "LinkedList.hpp"
 #include "DoubleLinkedList.hpp"
 #include <vector>
+#include <map>
 #include "ArrayList.hpp"
+
+# include "BinarySearchTree.hpp"
+
 using namespace std;
 
 class TestPerson {
@@ -27,18 +31,21 @@ public:
 
 class TestStudent: public TestPerson {
 public:
-    TestStudent(): TestPerson(10) {
-        
+    
+    TestStudent(int age): TestPerson(age) {
+        cout << "this:" << this << endl;
     }
+    
     void eatTest() override {
         cout << "TestStudent::eat" << endl;
     }
+
 };
 
 
 class TestGraduate: public TestStudent {
 public:
-    TestGraduate()  {
+    TestGraduate(): TestStudent(10)  {
         
     }
     
@@ -49,25 +56,90 @@ public:
 };
 
 #include "SingleCycleLinkedList.hpp"
+#include "AStack.hpp"
+#include "opencv.hpp"
+
+class pgface_box
+{
+public:
+    float x0 {0.0};
+    float y0 {0.0};
+    float x1 {0.0};
+    float y1 {0.0};
+    
+    float score {0.0};
+  
+    cv::Point2f pts5[5];
+    
+public:
+    pgface_box() = default;
+    pgface_box(cv::Rect &box)
+    {
+        x0 = box.x;
+        y0 = box.y;
+        x1 = box.x + box.width;
+        y1 = box.y + box.height;
+    }
+};
+
+class pgface_pts
+{
+public:
+    cv::Point2f pts106[106];
+};
+
+class pgface_pose
+{
+public:
+    //unit: rad
+    float pitch_;
+    float yaw_;
+    float roll_;
+};
+
+class pgface_attri
+{
+public:
+    int isMen {0};
+    int ageNumber{0};
+};
+class pgface_info
+{
+public:
+    pgface_attri atrri;
+    pgface_box box;
+    pgface_pts pts;
+    pgface_pose pose;
+public:
+    pgface_info() = default;
+    ~pgface_info() = default;
+    pgface_info(pgface_box &box)
+    {
+        this->box = box;
+    }
+    pgface_info(pgface_pts &pts)
+    {
+        this->pts = pts;
+    }
+    pgface_info(pgface_box &box,pgface_pts &pts)
+    {
+        this->box = box;
+        this->pts = pts;
+    }
+};
+
+class TestStudentComparator: public Comparator<TestStudent> {
+    
+    bool compare(TestStudent *e1, TestStudent *e2) {
+        return e1->m_age == e2->m_age;
+    }
+};
 
 int main( int argc, char** argv ) {
-    SingleCycleLinkedList<int> *list = new SingleCycleLinkedList<int>();
-    list->add(0);
-    list->add(1);
-    list->add(2);
-    list->add(3);
-    list->add(4);
-    list->add(5);
-    list->add(6);
-    list->add(7);
-
-//    list->insert(0, 111);
-//    list->insert(4, 444);
-//    list->add(8);
-    
-//    list->removeAt(6);
-//    list->removeAt(3);
-    list->printAll();
-    cout << "------------" << endl;
-    return 0;
+    TestStudentComparator * comparator = new TestStudentComparator();
+    BinarySearchTree<TestStudent> *tree = new BinarySearchTree<TestStudent>(comparator);
+    for (int index = 0; index < 10; index++) {
+        TestStudent *person = new TestStudent(index);
+        tree->add(person);
+    }
 }

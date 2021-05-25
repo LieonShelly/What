@@ -70,6 +70,7 @@
 		CD46B0FF2563DFC4000D0590 /* MemoryLayout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD46B0FD2563DFC4000D0590 /* MemoryLayout.cpp */; };
 		CD495BDA2584E6F6002DBFEA /* Assemble.asm in Sources */ = {isa = PBXBuildFile; fileRef = CD495BD92584E6F6002DBFEA /* Assemble.asm */; };
 		CD73DA7625ABF5D100BA282A /* SingleCycleLinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD73DA7425ABF5D100BA282A /* SingleCycleLinkedList.cpp */; };
+		CD73DE4A25ACABF300BA282A /* AStack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD73DE4825ACABF300BA282A /* AStack.cpp */; };
 		CD76D28F2553CF550085D19E /* StaticMember.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD76D28D2553CF550085D19E /* StaticMember.cpp */; };
 		CD77801A254BBDF70037C7F1 /* InitList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD778018254BBDF70037C7F1 /* InitList.cpp */; };
 		CD778020254BEBA30037C7F1 /* SuperClassInit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD77801E254BEBA30037C7F1 /* SuperClassInit.cpp */; };
@@ -82,6 +83,7 @@
 		CD7C16A625369895006893D3 /* StackSapce.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD7C16A425369895006893D3 /* StackSapce.cpp */; };
 		CD874F5F2487F73900FC72EC /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD874F4E2485F31B00FC72EC /* main.cpp */; };
 		CD939693256BBD8A0009D79A /* STL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD939691256BBD8A0009D79A /* STL.cpp */; };
+		CDB8920F262FF6FE00F30867 /* BinarySearchTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDB8920D262FF6FE00F30867 /* BinarySearchTree.cpp */; };
 		CDCBEBE82562523200C51B1E /* Resource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDCBEBE62562523200C51B1E /* Resource.cpp */; };
 		CDEE539725A314A100A57A32 /* Basic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDEE539525A314A100A57A32 /* Basic.cpp */; };
 		CDEE539D25A362D500A57A32 /* LinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDEE539B25A362D500A57A32 /* LinkedList.cpp */; };
@@ -482,6 +484,8 @@
 		CD495BD92584E6F6002DBFEA /* Assemble.asm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm.asm; path = Assemble.asm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.asm.arm; };
 		CD73DA7425ABF5D100BA282A /* SingleCycleLinkedList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SingleCycleLinkedList.cpp; sourceTree = "<group>"; };
 		CD73DA7525ABF5D100BA282A /* SingleCycleLinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SingleCycleLinkedList.hpp; sourceTree = "<group>"; };
+		CD73DE4825ACABF300BA282A /* AStack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AStack.cpp; sourceTree = "<group>"; };
+		CD73DE4925ACABF300BA282A /* AStack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AStack.hpp; sourceTree = "<group>"; };
 		CD76D28D2553CF550085D19E /* StaticMember.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StaticMember.cpp; sourceTree = "<group>"; };
 		CD76D28E2553CF550085D19E /* StaticMember.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = StaticMember.hpp; sourceTree = "<group>"; };
 		CD778018254BBDF70037C7F1 /* InitList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InitList.cpp; sourceTree = "<group>"; };
@@ -506,6 +510,8 @@
 		CD874F4E2485F31B00FC72EC /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		CD939691256BBD8A0009D79A /* STL.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = STL.cpp; sourceTree = "<group>"; };
 		CD939692256BBD8A0009D79A /* STL.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = STL.hpp; sourceTree = "<group>"; };
+		CDB8920D262FF6FE00F30867 /* BinarySearchTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinarySearchTree.cpp; sourceTree = "<group>"; };
+		CDB8920E262FF6FE00F30867 /* BinarySearchTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinarySearchTree.hpp; sourceTree = "<group>"; };
 		CDCBEBE62562523200C51B1E /* Resource.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Resource.cpp; sourceTree = "<group>"; };
 		CDCBEBE72562523200C51B1E /* Resource.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Resource.hpp; sourceTree = "<group>"; };
 		CDEE539525A314A100A57A32 /* Basic.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Basic.cpp; sourceTree = "<group>"; };
@@ -602,6 +608,8 @@
 		CD1C1ECE25A0C70E000B14A6 /* 算法 */ = {
 			isa = PBXGroup;
 			children = (
+				CDB8920C262FF58900F30867 /* 二叉树 */,
+				CD73DE4725ACABE300BA282A /* Stack */,
 				CDEE539A25A362BB00A57A32 /* 链表 */,
 				CD1C1ED525A21D1C000B14A6 /* 动态数组 */,
 				CD1C1ECF25A0C715000B14A6 /* 复杂度 */,
@@ -1462,6 +1470,15 @@
 			path = "内存布局";
 			sourceTree = "<group>";
 		};
+		CD73DE4725ACABE300BA282A /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				CD73DE4825ACABF300BA282A /* AStack.cpp */,
+				CD73DE4925ACABF300BA282A /* AStack.hpp */,
+			);
+			path = Stack;
+			sourceTree = "<group>";
+		};
 		CD76D28B2553CEC40085D19E /* 静态成员 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1614,6 +1631,15 @@
 			path = STL;
 			sourceTree = "<group>";
 		};
+		CDB8920C262FF58900F30867 /* 二叉树 */ = {
+			isa = PBXGroup;
+			children = (
+				CDB8920D262FF6FE00F30867 /* BinarySearchTree.cpp */,
+				CDB8920E262FF6FE00F30867 /* BinarySearchTree.hpp */,
+			);
+			path = "二叉树";
+			sourceTree = "<group>";
+		};
 		CDCBEBE5256251F800C51B1E /* Effective C++ */ = {
 			isa = PBXGroup;
 			children = (
@@ -1708,6 +1734,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD46B0FF2563DFC4000D0590 /* MemoryLayout.cpp in Sources */,
+				CDB8920F262FF6FE00F30867 /* BinarySearchTree.cpp in Sources */,
 				CD1C1ED225A0C72A000B14A6 /* Fuzadu.cpp in Sources */,
 				CD46B0F92563C5B9000D0590 /* CVBasicDataType.cpp in Sources */,
 				CD874F5F2487F73900FC72EC /* main.cpp in Sources */,
@@ -1715,6 +1742,7 @@
 				CD73DA7625ABF5D100BA282A /* SingleCycleLinkedList.cpp in Sources */,
 				CD29AA2825A5A0A800B41B64 /* LinkedListPractise.cpp in Sources */,
 				CD7A0FE125383F1D0095FBA6 /* NameSpace.cpp in Sources */,
+				CD73DE4A25ACABF300BA282A /* AStack.cpp in Sources */,
 				CDEE53A225A365B000A57A32 /* List.cpp in Sources */,
 				CD16E726254FB51D004AE2D5 /* MultiInheritence.cpp in Sources */,
 				CD77802C254BF1610037C7F1 /* Polymorphism.cpp in Sources */,

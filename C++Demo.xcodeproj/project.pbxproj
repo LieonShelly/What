@@ -81,6 +81,7 @@
 		CD7A0FE125383F1D0095FBA6 /* NameSpace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD7A0FDF25383F1D0095FBA6 /* NameSpace.cpp */; };
 		CD7A0FE7253840AF0095FBA6 /* Inherience.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD7A0FE5253840AF0095FBA6 /* Inherience.cpp */; };
 		CD7C16A625369895006893D3 /* StackSapce.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD7C16A425369895006893D3 /* StackSapce.cpp */; };
+		CD865287265F30B100AD6D27 /* BinaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD865285265F30B100AD6D27 /* BinaryTree.cpp */; };
 		CD874F5F2487F73900FC72EC /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD874F4E2485F31B00FC72EC /* main.cpp */; };
 		CD939693256BBD8A0009D79A /* STL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD939691256BBD8A0009D79A /* STL.cpp */; };
 		CDB8920F262FF6FE00F30867 /* BinarySearchTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDB8920D262FF6FE00F30867 /* BinarySearchTree.cpp */; };
@@ -506,12 +507,14 @@
 		CD7A0FE6253840AF0095FBA6 /* Inherience.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Inherience.hpp; sourceTree = "<group>"; };
 		CD7C16A425369895006893D3 /* StackSapce.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StackSapce.cpp; sourceTree = "<group>"; };
 		CD7C16A525369895006893D3 /* StackSapce.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = StackSapce.hpp; sourceTree = "<group>"; };
+		CD865285265F30B100AD6D27 /* BinaryTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryTree.cpp; sourceTree = "<group>"; };
+		CD865286265F30B100AD6D27 /* BinaryTree.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = BinaryTree.hpp; sourceTree = "<group>"; };
 		CD874F4B2485F31B00FC72EC /* C++Demo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C++Demo"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD874F4E2485F31B00FC72EC /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		CD939691256BBD8A0009D79A /* STL.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = STL.cpp; sourceTree = "<group>"; };
 		CD939692256BBD8A0009D79A /* STL.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = STL.hpp; sourceTree = "<group>"; };
 		CDB8920D262FF6FE00F30867 /* BinarySearchTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinarySearchTree.cpp; sourceTree = "<group>"; };
-		CDB8920E262FF6FE00F30867 /* BinarySearchTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinarySearchTree.hpp; sourceTree = "<group>"; };
+		CDB8920E262FF6FE00F30867 /* BinarySearchTree.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = BinarySearchTree.hpp; sourceTree = "<group>"; };
 		CDCBEBE62562523200C51B1E /* Resource.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Resource.cpp; sourceTree = "<group>"; };
 		CDCBEBE72562523200C51B1E /* Resource.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Resource.hpp; sourceTree = "<group>"; };
 		CDEE539525A314A100A57A32 /* Basic.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Basic.cpp; sourceTree = "<group>"; };
@@ -1636,6 +1639,8 @@
 			children = (
 				CDB8920D262FF6FE00F30867 /* BinarySearchTree.cpp */,
 				CDB8920E262FF6FE00F30867 /* BinarySearchTree.hpp */,
+				CD865285265F30B100AD6D27 /* BinaryTree.cpp */,
+				CD865286265F30B100AD6D27 /* BinaryTree.hpp */,
 			);
 			path = "二叉树";
 			sourceTree = "<group>";
@@ -1769,6 +1774,7 @@
 				CD1C1ED825A21D44000B14A6 /* ArrayList.cpp in Sources */,
 				CDEE539725A314A100A57A32 /* Basic.cpp in Sources */,
 				CD7A0FDB25383CF40095FBA6 /* ObjectMemManage.cpp in Sources */,
+				CD865287265F30B100AD6D27 /* BinaryTree.cpp in Sources */,
 				CD76D28F2553CF550085D19E /* StaticMember.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

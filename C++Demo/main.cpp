@@ -128,17 +128,18 @@ public:
     }
 };
 
-class TestStudentComparator: public Comparator<int> {
+class TestStudentComparator: public Comparator {
     
-    bool compare(int *e1, int *e2) {
-        return 1;
+    bool compare(int e1, int e2) {
+        return e1 > e2;
     }
 };
 
 int main( int argc, char** argv ) {
     TestStudentComparator * comparator = new TestStudentComparator();
-    BinarySearchTree<int> *tree = new BinarySearchTree<int>(comparator);
+    BinarySearchTree *tree = new BinarySearchTree(*comparator);
     for (int index = 0; index < 10; index++) {
-        tree->add(&index);
+        tree->add(index);
+//        tree->remove(index);
     }
 }

@@ -52,15 +52,13 @@ class BinarySearchTree {
         bool hasTwoChildren() {
             return  left != nullptr && right != nullptr;
         }
-
+        
     };
-
+    
 private:
     int m_size;
     Node<E> * root;
     Comparator<E> * comparator;
-    
-    
     
     void elementNoNullCheck(E *element) noexcept {
         if (element == nullptr) {
@@ -74,6 +72,7 @@ private:
         throw "e1 e2 can not be compare";
     }
     
+    // 删除传入的节点
     void remove(Node<E> *node) {
         if (node == nullptr) {
             return;
@@ -81,10 +80,74 @@ private:
         m_size--;
         if (node->hasTwoChildren()) { // 度为2的节点
             // 找到后继节点
-
+            Node<E> *s = successor(node);
+            // 用后继点的值覆盖度为2的节点的值
+            node->element = s->element;
+            node = s;
+        }
+        // 删除node节点（此时node的度必然是1或者0）
+        Node<E> *replacement = node->left != nullptr ? node->left : node->right;
+        
+        if (replacement != nullptr) { // node是度为1的节点
+            // 更改parent
+            replacement->parent = node->parent;
+            // 更改parent的left，right的指向
+            if (node->parent == nullptr) {
+                root = replacement;
+            } else if (node == node->parent->left) {
+                node->parent->left = replacement;
+            } else {
+                node->parent->right = replacement;
+            }
+        } else if (node->parent == nullptr) { // node是叶子节点,并且是根节点
+            root = nullptr;
+        } else { // node是叶子节点，但不是根节点
+            if (node == node->parent->left) {
+                node->parent->left = nullptr;
+            } else {
+                node->parent->right = nullptr;
+            }
         }
     }
     
+    // 根据元素获取节点
+    Node<E> * node(E *element) {
+        Node<E> *node = root;
+        while (node != nullptr) {
+            int cmp = comparator->compare(element, node->element);
+            if (cmp == 0) {
+                return node;
+            } else if (cmp > 0) {
+                node = node->right;
+            } else {
+                node = node->left;
+            }
+        }
+        return nullptr;
+    }
+    
+    /**
+     前驱节点： 中序遍历的前一个节点，如果是二叉搜索树，前驱节点就是前一个比它小的节点
+     */
+    Node<E> * predecessor(Node<E> *node) {
+        if (node == nullptr) {
+            return nullptr;
+        }
+        // 前驱节点在左子树中当中 <left.right.right...>
+        if (node->left == nullptr) {
+            Node<E> * p = node->left;
+            while (p->right != nullptr) {
+                p = p->right;
+            }
+        }
+        // 从父节点，祖父节点中寻找前驱节点
+        while (node->parent != nullptr && node == node->parent->left) {
+            node = node->parent;
+        }
+        return node->parent;
+    }
+    
+    // 后继节点
     Node<E>* successor(Node<E> *node) {
         if (node == nullptr) {
             return nullptr;
@@ -158,7 +221,7 @@ public:
     }
     
     void remove(E *element) {
-        
+        remove(node(element));
     }
     
     void preorderTraversal() {
@@ -175,8 +238,8 @@ public:
     }
     // 中序遍历
     /**
-      升序： 左边节点 节点的值 右边节点
-      降序： 右边节点 节点的值 左边节点
+     升序： 左边节点 节点的值 右边节点
+     降序： 右边节点 节点的值 左边节点
      */
     void inorderTraseral() {
         inorderTraserval(root);
@@ -238,7 +301,7 @@ public:
      */
     int height() {
         // 迭代
-//        return height(root);
+        //        return height(root);
         // 层序遍历的方式获取高度
         int levelSize = 1;
         int height = 0;
@@ -270,30 +333,30 @@ public:
     }
     
     // 是否是完全二叉树
-//    bool isComplete() {
-//        queue<Node<E>*> queue;
-//        queue.push(root);
-//        bool isLeaf = false;
-//        while (!queue.empty()) {
-//            Node<E> * head = queue.pop();
-//            // 要求是叶子节点，但是它并不是
-//            if (isLeaf && !head->isLeaf()) {
-//                return false;
-//            }
-//            if (head->hasTwoChildren()) {
-//                queue.push(head->left);
-//                queue.push(head->right);
-//            } else if (head->left == nullptr && head->right != nullptr) {
-//                return false;
-//            } else {
-//                isLeaf = true;
-//                if (head->left != nullptr) {
-//                    queue.push(head->left);
-//                }
-//            }
-//        }
-//        return true;
-//    }
+    //    bool isComplete() {
+    //        queue<Node<E>*> queue;
+    //        queue.push(root);
+    //        bool isLeaf = false;
+    //        while (!queue.empty()) {
+    //            Node<E> * head = queue.pop();
+    //            // 要求是叶子节点，但是它并不是
+    //            if (isLeaf && !head->isLeaf()) {
+    //                return false;
+    //            }
+    //            if (head->hasTwoChildren()) {
+    //                queue.push(head->left);
+    //                queue.push(head->right);
+    //            } else if (head->left == nullptr && head->right != nullptr) {
+    //                return false;
+    //            } else {
+    //                isLeaf = true;
+    //                if (head->left != nullptr) {
+    //                    queue.push(head->left);
+    //                }
+    //            }
+    //        }
+    //        return true;
+    //    }
     
     bool isComplete() {
         queue<Node<E>*> queue;
@@ -334,8 +397,8 @@ public:
         invert(node->right);
         return node;
     }
+    
 };
-    
-    
+
 
 #endif /* BinarySearchTree_hpp */

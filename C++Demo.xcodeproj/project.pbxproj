@@ -17,10 +17,15 @@
 		CD29F8032556FED40023EFE7 /* CopyConstruct.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD29F8012556FED40023EFE7 /* CopyConstruct.cpp */; };
 		CD29F808255703700023EFE7 /* Copy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD29F806255703700023EFE7 /* Copy.cpp */; };
 		CD3219122530604300546C50 /* reference.hpp in Sources */ = {isa = PBXBuildFile; fileRef = CD3218FE2530604300546C50 /* reference.hpp */; };
+		CD3455B726661CEB00E5DF6D /* FacadePattern.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD3455B526661CEB00E5DF6D /* FacadePattern.cpp */; };
+		CD3455C726671DF800E5DF6D /* Template.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD3455C526671DF800E5DF6D /* Template.cpp */; };
+		CD3455CA2667207A00E5DF6D /* Strategy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD3455C82667207A00E5DF6D /* Strategy.cpp */; };
+		CD36B53C2666123A00BCD556 /* Flyweight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD36B53A2666123A00BCD556 /* Flyweight.cpp */; };
 		CD458C932559366E003AD5A8 /* Friend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD458C912559366E003AD5A8 /* Friend.cpp */; };
 		CD458C9925594237003AD5A8 /* Others.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD458C9725594237003AD5A8 /* Others.cpp */; };
 		CD458C9F255A4348003AD5A8 /* Template.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD458C9D255A4348003AD5A8 /* Template.cpp */; };
 		CD458CA5255A817E003AD5A8 /* Lambda.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD458CA3255A817E003AD5A8 /* Lambda.cpp */; };
+		CD45AFA526A5C91E00EE4B8F /* BubbleSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD45AFA326A5C91E00EE4B8F /* BubbleSort.cpp */; };
 		CD46AF612563A923000D0590 /* libopencv_stitching.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CD46AF342563A923000D0590 /* libopencv_stitching.dylib */; };
 		CD46AF622563A923000D0590 /* libopencv_features2d.4.5.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CD46AF352563A923000D0590 /* libopencv_features2d.4.5.0.dylib */; };
 		CD46AF632563A923000D0590 /* libopencv_gapi.4.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CD46AF362563A923000D0590 /* libopencv_gapi.4.5.dylib */; };
@@ -69,6 +74,8 @@
 		CD46B0F92563C5B9000D0590 /* CVBasicDataType.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD46B0F72563C5B9000D0590 /* CVBasicDataType.cpp */; };
 		CD46B0FF2563DFC4000D0590 /* MemoryLayout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD46B0FD2563DFC4000D0590 /* MemoryLayout.cpp */; };
 		CD495BDA2584E6F6002DBFEA /* Assemble.asm in Sources */ = {isa = PBXBuildFile; fileRef = CD495BD92584E6F6002DBFEA /* Assemble.asm */; };
+		CD6B922C266536E000067042 /* Adapter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD6B922A266536E000067042 /* Adapter.cpp */; };
+		CD6B922F2665411700067042 /* Decorator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD6B922D2665411700067042 /* Decorator.cpp */; };
 		CD73DA7625ABF5D100BA282A /* SingleCycleLinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD73DA7425ABF5D100BA282A /* SingleCycleLinkedList.cpp */; };
 		CD73DE4A25ACABF300BA282A /* AStack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD73DE4825ACABF300BA282A /* AStack.cpp */; };
 		CD76D28F2553CF550085D19E /* StaticMember.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD76D28D2553CF550085D19E /* StaticMember.cpp */; };
@@ -76,11 +83,15 @@
 		CD778020254BEBA30037C7F1 /* SuperClassInit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD77801E254BEBA30037C7F1 /* SuperClassInit.cpp */; };
 		CD778026254BEE570037C7F1 /* SuperPoiner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD778024254BEE570037C7F1 /* SuperPoiner.cpp */; };
 		CD77802C254BF1610037C7F1 /* Polymorphism.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD77802A254BF1610037C7F1 /* Polymorphism.cpp */; };
+		CD796E222670CB9E00A2874C /* Command.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD796E202670CB9E00A2874C /* Command.cpp */; };
+		CD796E2526720B3400A2874C /* Observer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD796E2326720B3400A2874C /* Observer.cpp */; };
 		CD7A0FD32538346C0095FBA6 /* PropertyInit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD7A0FD12538346C0095FBA6 /* PropertyInit.cpp */; };
 		CD7A0FDB25383CF40095FBA6 /* ObjectMemManage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD7A0FD925383CF40095FBA6 /* ObjectMemManage.cpp */; };
 		CD7A0FE125383F1D0095FBA6 /* NameSpace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD7A0FDF25383F1D0095FBA6 /* NameSpace.cpp */; };
 		CD7A0FE7253840AF0095FBA6 /* Inherience.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD7A0FE5253840AF0095FBA6 /* Inherience.cpp */; };
 		CD7C16A625369895006893D3 /* StackSapce.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD7C16A425369895006893D3 /* StackSapce.cpp */; };
+		CD8293062662A0DE00BD4545 /* Bridge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD8293042662A0DE00BD4545 /* Bridge.cpp */; };
+		CD8293092663E61300BD4545 /* Proxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD8293072663E61300BD4545 /* Proxy.cpp */; };
 		CD865287265F30B100AD6D27 /* BinaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD865285265F30B100AD6D27 /* BinaryTree.cpp */; };
 		CD874F5F2487F73900FC72EC /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD874F4E2485F31B00FC72EC /* main.cpp */; };
 		CD939693256BBD8A0009D79A /* STL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD939691256BBD8A0009D79A /* STL.cpp */; };
@@ -124,6 +135,14 @@
 		CD29F806255703700023EFE7 /* Copy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Copy.cpp; sourceTree = "<group>"; };
 		CD29F807255703700023EFE7 /* Copy.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Copy.hpp; sourceTree = "<group>"; };
 		CD3218FE2530604300546C50 /* reference.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = reference.hpp; sourceTree = "<group>"; };
+		CD3455B526661CEB00E5DF6D /* FacadePattern.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FacadePattern.cpp; sourceTree = "<group>"; };
+		CD3455B626661CEB00E5DF6D /* FacadePattern.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FacadePattern.hpp; sourceTree = "<group>"; };
+		CD3455C526671DF800E5DF6D /* Template.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Template.cpp; sourceTree = "<group>"; };
+		CD3455C626671DF800E5DF6D /* Template.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Template.hpp; sourceTree = "<group>"; };
+		CD3455C82667207A00E5DF6D /* Strategy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Strategy.cpp; sourceTree = "<group>"; };
+		CD3455C92667207A00E5DF6D /* Strategy.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Strategy.hpp; sourceTree = "<group>"; };
+		CD36B53A2666123A00BCD556 /* Flyweight.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Flyweight.cpp; sourceTree = "<group>"; };
+		CD36B53B2666123A00BCD556 /* Flyweight.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Flyweight.hpp; sourceTree = "<group>"; };
 		CD458C912559366E003AD5A8 /* Friend.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Friend.cpp; sourceTree = "<group>"; };
 		CD458C922559366E003AD5A8 /* Friend.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Friend.hpp; sourceTree = "<group>"; };
 		CD458C9725594237003AD5A8 /* Others.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Others.cpp; sourceTree = "<group>"; };
@@ -132,6 +151,8 @@
 		CD458C9E255A4348003AD5A8 /* Template.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Template.hpp; sourceTree = "<group>"; };
 		CD458CA3255A817E003AD5A8 /* Lambda.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Lambda.cpp; sourceTree = "<group>"; };
 		CD458CA4255A817E003AD5A8 /* Lambda.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Lambda.hpp; sourceTree = "<group>"; };
+		CD45AFA326A5C91E00EE4B8F /* BubbleSort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BubbleSort.cpp; sourceTree = "<group>"; };
+		CD45AFA426A5C91E00EE4B8F /* BubbleSort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BubbleSort.hpp; sourceTree = "<group>"; };
 		CD46AF342563A923000D0590 /* libopencv_stitching.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_stitching.dylib; sourceTree = "<group>"; };
 		CD46AF352563A923000D0590 /* libopencv_features2d.4.5.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_features2d.4.5.0.dylib; sourceTree = "<group>"; };
 		CD46AF362563A923000D0590 /* libopencv_gapi.4.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_gapi.4.5.dylib; sourceTree = "<group>"; };
@@ -483,6 +504,10 @@
 		CD46B0FD2563DFC4000D0590 /* MemoryLayout.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MemoryLayout.cpp; sourceTree = "<group>"; };
 		CD46B0FE2563DFC4000D0590 /* MemoryLayout.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MemoryLayout.hpp; sourceTree = "<group>"; };
 		CD495BD92584E6F6002DBFEA /* Assemble.asm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm.asm; path = Assemble.asm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.asm.arm; };
+		CD6B922A266536E000067042 /* Adapter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Adapter.cpp; sourceTree = "<group>"; };
+		CD6B922B266536E000067042 /* Adapter.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Adapter.hpp; sourceTree = "<group>"; };
+		CD6B922D2665411700067042 /* Decorator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Decorator.cpp; sourceTree = "<group>"; };
+		CD6B922E2665411700067042 /* Decorator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Decorator.hpp; sourceTree = "<group>"; };
 		CD73DA7425ABF5D100BA282A /* SingleCycleLinkedList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SingleCycleLinkedList.cpp; sourceTree = "<group>"; };
 		CD73DA7525ABF5D100BA282A /* SingleCycleLinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SingleCycleLinkedList.hpp; sourceTree = "<group>"; };
 		CD73DE4825ACABF300BA282A /* AStack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AStack.cpp; sourceTree = "<group>"; };
@@ -497,6 +522,10 @@
 		CD778025254BEE570037C7F1 /* SuperPoiner.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SuperPoiner.hpp; sourceTree = "<group>"; };
 		CD77802A254BF1610037C7F1 /* Polymorphism.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Polymorphism.cpp; sourceTree = "<group>"; };
 		CD77802B254BF1610037C7F1 /* Polymorphism.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Polymorphism.hpp; sourceTree = "<group>"; };
+		CD796E202670CB9E00A2874C /* Command.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Command.cpp; sourceTree = "<group>"; };
+		CD796E212670CB9E00A2874C /* Command.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Command.hpp; sourceTree = "<group>"; };
+		CD796E2326720B3400A2874C /* Observer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Observer.cpp; sourceTree = "<group>"; };
+		CD796E2426720B3400A2874C /* Observer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Observer.hpp; sourceTree = "<group>"; };
 		CD7A0FD12538346C0095FBA6 /* PropertyInit.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PropertyInit.cpp; sourceTree = "<group>"; };
 		CD7A0FD22538346C0095FBA6 /* PropertyInit.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PropertyInit.hpp; sourceTree = "<group>"; };
 		CD7A0FD925383CF40095FBA6 /* ObjectMemManage.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ObjectMemManage.cpp; sourceTree = "<group>"; };
@@ -507,6 +536,10 @@
 		CD7A0FE6253840AF0095FBA6 /* Inherience.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Inherience.hpp; sourceTree = "<group>"; };
 		CD7C16A425369895006893D3 /* StackSapce.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StackSapce.cpp; sourceTree = "<group>"; };
 		CD7C16A525369895006893D3 /* StackSapce.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = StackSapce.hpp; sourceTree = "<group>"; };
+		CD8293042662A0DE00BD4545 /* Bridge.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bridge.cpp; path = "C++Demo/设计模式学习/Bridge.cpp"; sourceTree = SOURCE_ROOT; };
+		CD8293052662A0DE00BD4545 /* Bridge.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Bridge.hpp; path = "C++Demo/设计模式学习/Bridge.hpp"; sourceTree = SOURCE_ROOT; };
+		CD8293072663E61300BD4545 /* Proxy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Proxy.cpp; sourceTree = "<group>"; };
+		CD8293082663E61300BD4545 /* Proxy.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Proxy.hpp; sourceTree = "<group>"; };
 		CD865285265F30B100AD6D27 /* BinaryTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryTree.cpp; sourceTree = "<group>"; };
 		CD865286265F30B100AD6D27 /* BinaryTree.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = BinaryTree.hpp; sourceTree = "<group>"; };
 		CD874F4B2485F31B00FC72EC /* C++Demo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C++Demo"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -611,6 +644,7 @@
 		CD1C1ECE25A0C70E000B14A6 /* 算法 */ = {
 			isa = PBXGroup;
 			children = (
+				CD45AFA226A5C90B00EE4B8F /* 排序 */,
 				CDB8920C262FF58900F30867 /* 二叉树 */,
 				CD73DE4725ACABE300BA282A /* Stack */,
 				CDEE539A25A362BB00A57A32 /* 链表 */,
@@ -682,6 +716,21 @@
 			path = "引用";
 			sourceTree = "<group>";
 		};
+		CD3455C426671DE400E5DF6D /* 行为型 */ = {
+			isa = PBXGroup;
+			children = (
+				CD3455C526671DF800E5DF6D /* Template.cpp */,
+				CD3455C626671DF800E5DF6D /* Template.hpp */,
+				CD3455C82667207A00E5DF6D /* Strategy.cpp */,
+				CD3455C92667207A00E5DF6D /* Strategy.hpp */,
+				CD796E202670CB9E00A2874C /* Command.cpp */,
+				CD796E212670CB9E00A2874C /* Command.hpp */,
+				CD796E2326720B3400A2874C /* Observer.cpp */,
+				CD796E2426720B3400A2874C /* Observer.hpp */,
+			);
+			path = "行为型";
+			sourceTree = "<group>";
+		};
 		CD458C90255934A5003AD5A8 /* 友元 */ = {
 			isa = PBXGroup;
 			children = (
@@ -716,6 +765,15 @@
 				CD458CA4255A817E003AD5A8 /* Lambda.hpp */,
 			);
 			path = "Lamada表达式";
+			sourceTree = "<group>";
+		};
+		CD45AFA226A5C90B00EE4B8F /* 排序 */ = {
+			isa = PBXGroup;
+			children = (
+				CD45AFA326A5C91E00EE4B8F /* BubbleSort.cpp */,
+				CD45AFA426A5C91E00EE4B8F /* BubbleSort.hpp */,
+			);
+			path = "排序";
 			sourceTree = "<group>";
 		};
 		CD46ADD72563A8EA000D0590 /* CV */ = {
@@ -1572,6 +1630,25 @@
 			path = "堆空间";
 			sourceTree = "<group>";
 		};
+		CD8293032662A0C600BD4545 /* 结构型 */ = {
+			isa = PBXGroup;
+			children = (
+				CD8293042662A0DE00BD4545 /* Bridge.cpp */,
+				CD8293052662A0DE00BD4545 /* Bridge.hpp */,
+				CD8293072663E61300BD4545 /* Proxy.cpp */,
+				CD8293082663E61300BD4545 /* Proxy.hpp */,
+				CD6B922A266536E000067042 /* Adapter.cpp */,
+				CD6B922B266536E000067042 /* Adapter.hpp */,
+				CD6B922D2665411700067042 /* Decorator.cpp */,
+				CD6B922E2665411700067042 /* Decorator.hpp */,
+				CD36B53A2666123A00BCD556 /* Flyweight.cpp */,
+				CD36B53B2666123A00BCD556 /* Flyweight.hpp */,
+				CD3455B526661CEB00E5DF6D /* FacadePattern.cpp */,
+				CD3455B626661CEB00E5DF6D /* FacadePattern.hpp */,
+			);
+			path = "结构型";
+			sourceTree = "<group>";
+		};
 		CD874F422485F31B00FC72EC = {
 			isa = PBXGroup;
 			children = (
@@ -1591,6 +1668,7 @@
 		CD874F4D2485F31B00FC72EC /* C++Demo */ = {
 			isa = PBXGroup;
 			children = (
+				CDB2C9B626608497009D3FDD /* 设计模式学习 */,
 				CDEE539425A3148900A57A32 /* OpenGL学习 */,
 				CD1C1ECE25A0C70E000B14A6 /* 算法 */,
 				CD495BD92584E6F6002DBFEA /* Assemble.asm */,
@@ -1632,6 +1710,23 @@
 				CD939692256BBD8A0009D79A /* STL.hpp */,
 			);
 			path = STL;
+			sourceTree = "<group>";
+		};
+		CDB2C9B626608497009D3FDD /* 设计模式学习 */ = {
+			isa = PBXGroup;
+			children = (
+				CD3455C426671DE400E5DF6D /* 行为型 */,
+				CD8293032662A0C600BD4545 /* 结构型 */,
+				CDB2C9B7266084AE009D3FDD /* 创建型模式 */,
+			);
+			path = "设计模式学习";
+			sourceTree = "<group>";
+		};
+		CDB2C9B7266084AE009D3FDD /* 创建型模式 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "创建型模式";
 			sourceTree = "<group>";
 		};
 		CDB8920C262FF58900F30867 /* 二叉树 */ = {
@@ -1738,6 +1833,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD3455CA2667207A00E5DF6D /* Strategy.cpp in Sources */,
 				CD46B0FF2563DFC4000D0590 /* MemoryLayout.cpp in Sources */,
 				CDB8920F262FF6FE00F30867 /* BinarySearchTree.cpp in Sources */,
 				CD1C1ED225A0C72A000B14A6 /* Fuzadu.cpp in Sources */,
@@ -1750,6 +1846,7 @@
 				CD73DE4A25ACABF300BA282A /* AStack.cpp in Sources */,
 				CDEE53A225A365B000A57A32 /* List.cpp in Sources */,
 				CD16E726254FB51D004AE2D5 /* MultiInheritence.cpp in Sources */,
+				CD8293092663E61300BD4545 /* Proxy.cpp in Sources */,
 				CD77802C254BF1610037C7F1 /* Polymorphism.cpp in Sources */,
 				CD495BDA2584E6F6002DBFEA /* Assemble.asm in Sources */,
 				CD29F808255703700023EFE7 /* Copy.cpp in Sources */,
@@ -1761,17 +1858,26 @@
 				CD778026254BEE570037C7F1 /* SuperPoiner.cpp in Sources */,
 				CDEE53A625A40A2B00A57A32 /* AbstractList.cpp in Sources */,
 				CD29F7FD2556F7300023EFE7 /* ConstMember.cpp in Sources */,
+				CD45AFA526A5C91E00EE4B8F /* BubbleSort.cpp in Sources */,
+				CD3455B726661CEB00E5DF6D /* FacadePattern.cpp in Sources */,
 				CD458C9F255A4348003AD5A8 /* Template.cpp in Sources */,
 				CD458CA5255A817E003AD5A8 /* Lambda.cpp in Sources */,
+				CD8293062662A0DE00BD4545 /* Bridge.cpp in Sources */,
+				CD6B922C266536E000067042 /* Adapter.cpp in Sources */,
 				CD7A0FD32538346C0095FBA6 /* PropertyInit.cpp in Sources */,
 				CD7A0FE7253840AF0095FBA6 /* Inherience.cpp in Sources */,
 				CD939693256BBD8A0009D79A /* STL.cpp in Sources */,
+				CD796E222670CB9E00A2874C /* Command.cpp in Sources */,
+				CD36B53C2666123A00BCD556 /* Flyweight.cpp in Sources */,
 				CDEE539D25A362D500A57A32 /* LinkedList.cpp in Sources */,
 				CD77801A254BBDF70037C7F1 /* InitList.cpp in Sources */,
+				CD796E2526720B3400A2874C /* Observer.cpp in Sources */,
 				CD17648525A766B2006ECCC1 /* DoubleLinkedList.cpp in Sources */,
 				CD458C9925594237003AD5A8 /* Others.cpp in Sources */,
+				CD6B922F2665411700067042 /* Decorator.cpp in Sources */,
 				CD7C16A625369895006893D3 /* StackSapce.cpp in Sources */,
 				CD1C1ED825A21D44000B14A6 /* ArrayList.cpp in Sources */,
+				CD3455C726671DF800E5DF6D /* Template.cpp in Sources */,
 				CDEE539725A314A100A57A32 /* Basic.cpp in Sources */,
 				CD7A0FDB25383CF40095FBA6 /* ObjectMemManage.cpp in Sources */,
 				CD865287265F30B100AD6D27 /* BinaryTree.cpp in Sources */,

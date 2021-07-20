@@ -135,11 +135,8 @@ class TestStudentComparator: public Comparator {
     }
 };
 
+#include "BubbleSort.hpp"
+
 int main( int argc, char** argv ) {
-    TestStudentComparator * comparator = new TestStudentComparator();
-    BinarySearchTree *tree = new BinarySearchTree(*comparator);
-    for (int index = 0; index < 10; index++) {
-        tree->add(index);
-//        tree->remove(index);
-    }
+    BubbleSort::soort();
 }
